@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B2CDevSync", "B2CDevSync\B2CDevSync.csproj", "{5ACDADB7-3ED2-4833-90F7-7FF35DB2CC73}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{6C687360-D7FF-45E1-AB6E-81D9D3A41883}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{F21D4E16-4EFB-45C3-BD61-C8015DCF64EB}"
+	ProjectSection(SolutionItems) = preProject
+		Docs\IEFOnboarding.png = Docs\IEFOnboarding.png
+		Docs\Mainform.png = Docs\Mainform.png
+		Docs\Notification.png = Docs\Notification.png
+		Docs\Settings.png = Docs\Settings.png
+		Docs\Settings2.png = Docs\Settings2.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Install", "Install", "{CF436F88-0099-4F01-B868-DF250890AF55}"
+	ProjectSection(SolutionItems) = preProject
+		Install\B2CDevSync.zip = Install\B2CDevSync.zip
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5ACDADB7-3ED2-4833-90F7-7FF35DB2CC73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ACDADB7-3ED2-4833-90F7-7FF35DB2CC73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ACDADB7-3ED2-4833-90F7-7FF35DB2CC73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ACDADB7-3ED2-4833-90F7-7FF35DB2CC73}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F21D4E16-4EFB-45C3-BD61-C8015DCF64EB} = {6C687360-D7FF-45E1-AB6E-81D9D3A41883}
+		{CF436F88-0099-4F01-B868-DF250890AF55} = {6C687360-D7FF-45E1-AB6E-81D9D3A41883}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {24E42A93-1386-42D5-9F92-8B685367279A}
+	EndGlobalSection
+EndGlobal
