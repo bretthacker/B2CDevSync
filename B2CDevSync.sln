@@ -13,9 +13,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{6C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{F21D4E16-4EFB-45C3-BD61-C8015DCF64EB}"
 	ProjectSection(SolutionItems) = preProject
+		Docs\auth1.png = Docs\auth1.png
+		Docs\Auth2.png = Docs\Auth2.png
+		Docs\auth3.png = Docs\auth3.png
 		Docs\IEFOnboarding.png = Docs\IEFOnboarding.png
 		Docs\Mainform.png = Docs\Mainform.png
 		Docs\Notification.png = Docs\Notification.png
+		Docs\Permission2.png = Docs\Permission2.png
+		Docs\Permissions1.png = Docs\Permissions1.png
+		Docs\Permissions3.png = Docs\Permissions3.png
 		Docs\Settings.png = Docs\Settings.png
 		Docs\Settings2.png = Docs\Settings2.png
 	EndProjectSection

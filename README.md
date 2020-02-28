@@ -30,14 +30,43 @@ Once all the steps have been completed (setting up Facebook as an external ident
 will capture the appid and secret), the Create button will be enabled. Click it and the selected pack will be copied, values in the templates will be updated, and
 the files will be uploaded to the B2C tenant.
 
- ![alt text][Doc1]
- ![alt text][Doc2]
- ![alt text][Doc3]
- ![alt text][Doc5]
- ![alt text][Doc4]
+ ![alt text][Main]
+ ![alt text][Settings1]
+ ![alt text][Popup]
+ ![alt text][IEFOnboarding]
 
-[Doc1]: ./Docs/Mainform.png "Main form"
-[Doc2]: ./Docs/Settings.png "Settings dialog"
-[Doc3]: ./Docs/Settings2.png "Settings dialog"
-[Doc4]: ./Docs/Notification.png "Notification area pop-up"
-[Doc5]: ./Docs/IEFOnboarding.png "IEF Onboarding dialog"
+__Setup__
+
+A native app registration in your B2C tenant is required to use this app. An appid and replyURL is configured in the repo, but you should consider creating your own. Here are the steps:
+1. Go to the Azure Active Directory blade (NOT the B2C blade) in your B2C tenant
+2. Click App registrations (preview) and click New Registration
+3. Give it a name, accepting the defaults, and click Register
+4. After it's created, click "Authentication" and click "+ Add a platform"
+ ![alt text][Auth1]
+5. Select Mobile and desktop applications
+ ![alt text][Auth2]
+6. Select the preconfigured option for nativeclient, or enter your own URI
+ ![alt text][Auth3]
+7. After that's saved, select API Permissions under Manage, and click "+ Add a permission". Choose Microsoft Graph, Delegated.
+ ![alt text][Perm1]
+8. Select the following permissions:
+  a. Directory.AccessAsUser.All
+  b. Policy.ReadWrite.TrustFramework
+  c. TrustFrameworkKeySet.ReadWrite.All
+ ![alt text][Perm2]
+9. Update Application settings, entering the Sync App ID and Redirect URI values from above
+ ![alt text][Settings2]
+10. Click login on the main form, and consent to these permissions to login to the app
+ ![alt text][Perm3]
+
+[Main]: ./Docs/Mainform.png "Main form"
+[Settings1]: ./Docs/Settings.png "Settings dialog"
+[Settings2]: ./Docs/Settings2.png "Settings dialog"
+[Popup]: ./Docs/Notification.png "Notification area pop-up"
+[IEFOnboarding]: ./Docs/IEFOnboarding.png "IEF Onboarding dialog"
+[Auth1]: ./Docs/Auth1.png "IEF Onboarding dialog"
+[Auth2]: ./Docs/Auth2.png "IEF Onboarding dialog"
+[Auth3]: ./Docs/Auth3.png "IEF Onboarding dialog"
+[Perm1]: ./Docs/Permissions1.png "IEF Onboarding dialog"
+[Perm2]: ./Docs/Permission2.png "IEF Onboarding dialog"
+[Perm3]: ./Docs/Permissions3.png "IEF Onboarding dialog"
