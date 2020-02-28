@@ -42,22 +42,29 @@ A native app registration in your B2C tenant is required to use this app. An app
 2. Click App registrations (preview) and click New Registration
 3. Give it a name, accepting the defaults, and click Register
 4. After it's created, click "Authentication" and click "+ Add a platform"
- ![alt text][Auth1]
+ 
+![alt text][Auth1]
 5. Select Mobile and desktop applications
- ![alt text][Auth2]
+ 
+![alt text][Auth2]
 6. Select the preconfigured option for nativeclient, or enter your own URI
- ![alt text][Auth3]
+ 
+![alt text][Auth3]
 7. After that's saved, select API Permissions under Manage, and click "+ Add a permission". Choose Microsoft Graph, Delegated.
- ![alt text][Perm1]
+ 
+![alt text][Perm1]
 8. Select the following permissions:
   a. Directory.AccessAsUser.All
   b. Policy.ReadWrite.TrustFramework
   c. TrustFrameworkKeySet.ReadWrite.All
- ![alt text][Perm2]
+ 
+![alt text][Perm2]
 9. Update Application settings, entering the Sync App ID and Redirect URI values from above
- ![alt text][Settings2]
+ 
+![alt text][Settings2]
 10. Click login on the main form, and consent to these permissions to login to the app
- ![alt text][Perm3]
+ 
+![alt text][Perm3]
 
 [Main]: ./Docs/Mainform.png "Main form"
 [Settings1]: ./Docs/Settings.png "Settings dialog"
