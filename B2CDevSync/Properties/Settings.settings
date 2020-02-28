@@ -24,7 +24,7 @@
       <Value Profile="(Default)">3</Value>
     </Setting>
     <Setting Name="StorageConnectionString" Type="System.String" Scope="User">
-      <Value Profile="(Default)">DefaultEndpointsProtocol=https;AccountName=wutnu;AccountKey=uGIK+v15U3UWl3PvDr9pxw8higNxCXW2UBtJZ4hykWOPZy1I3dNO/iN2PKODuDyJj5yfZPLsJaUXdq/G81oPJQ==;EndpointSuffix=core.windows.net</Value>
+      <Value Profile="(Default)"></Value>
     </Setting>
     <Setting Name="StorageContainerName" Type="System.String" Scope="User">
       <Value Profile="(Default)">b2c</Value>
@@ -33,100 +33,16 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="UIPath" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\Users\brhacke\OneDrive\Dev\B2CFramework\New\UI</Value>
+      <Value Profile="(Default)"></Value>
     </Setting>
     <Setting Name="PolicyPath" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\Users\brhacke\OneDrive\Dev\B2CFramework\New</Value>
+      <Value Profile="(Default)"></Value>
     </Setting>
     <Setting Name="SyncPolicyBool" Type="System.String" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="SyncProfiles" Type="B2CDevSync.Models.SyncProfiles" Scope="User">
-      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SyncProfiles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;Profiles&gt;
-    &lt;SyncProfile&gt;
-      &lt;SyncProfileName&gt;Unified-HackerDemo&lt;/SyncProfileName&gt;
-      &lt;StorageConnectionString&gt;DefaultEndpointsProtocol=https;AccountName=wutnu;AccountKey=uGIK+v15U3UWl3PvDr9pxw8higNxCXW2UBtJZ4hykWOPZy1I3dNO/iN2PKODuDyJj5yfZPLsJaUXdq/G81oPJQ==;EndpointSuffix=core.windows.net&lt;/StorageConnectionString&gt;
-      &lt;StorageContainerName&gt;b2c&lt;/StorageContainerName&gt;
-      &lt;SyncStorageBool&gt;true&lt;/SyncStorageBool&gt;
-      &lt;SyncPolicyBool&gt;true&lt;/SyncPolicyBool&gt;
-      &lt;UIPath&gt;C:\Users\brhacke\OneDrive\Dev\MSFT\B2C-IEF-hackerdemob2c\UI&lt;/UIPath&gt;
-      &lt;SyncRecursive&gt;true&lt;/SyncRecursive&gt;
-      &lt;PolicyPath&gt;C:\Users\brhacke\OneDrive\Dev\MSFT\B2C-IEF-hackerdemob2c\Policies&lt;/PolicyPath&gt;
-    &lt;/SyncProfile&gt;
-    &lt;SyncProfile&gt;
-      &lt;SyncProfileName&gt;Tunamatic&lt;/SyncProfileName&gt;
-      &lt;StorageConnectionString&gt;DefaultEndpointsProtocol=https;AccountName=kaas2;AccountKey=j41ZoNYssEJneqQ1k063eIMl3t6vuEV0e+vtbimpqp7xTVc9qG3Bb65jWd9EACp5QqGqi9P8oY3CzUUA/RZ/0w==;EndpointSuffix=core.windows.net&lt;/StorageConnectionString&gt;
-      &lt;StorageContainerName&gt;auth&lt;/StorageContainerName&gt;
-      &lt;SyncStorageBool&gt;true&lt;/SyncStorageBool&gt;
-      &lt;SyncPolicyBool&gt;false&lt;/SyncPolicyBool&gt;
-      &lt;UIPath&gt;C:\Users\brhacke\OneDrive\Dev\Tunamatic\Tunamaticauth&lt;/UIPath&gt;
-      &lt;SyncRecursive&gt;true&lt;/SyncRecursive&gt;
-      &lt;PolicyPath /&gt;
-    &lt;/SyncProfile&gt;
-    &lt;SyncProfile&gt;
-      &lt;SyncProfileName&gt;HackerdemoB2C native UI only&lt;/SyncProfileName&gt;
-      &lt;StorageConnectionString&gt;DefaultEndpointsProtocol=https;AccountName=wutnu;AccountKey=uGIK+v15U3UWl3PvDr9pxw8higNxCXW2UBtJZ4hykWOPZy1I3dNO/iN2PKODuDyJj5yfZPLsJaUXdq/G81oPJQ==;EndpointSuffix=core.windows.net&lt;/StorageConnectionString&gt;
-      &lt;StorageContainerName&gt;b2cstock&lt;/StorageContainerName&gt;
-      &lt;SyncStorageBool&gt;true&lt;/SyncStorageBool&gt;
-      &lt;SyncPolicyBool&gt;false&lt;/SyncPolicyBool&gt;
-      &lt;UIPath&gt;C:\Users\brhacke\OneDrive\Dev\B2CFramework\b2cStock&lt;/UIPath&gt;
-      &lt;SyncRecursive&gt;true&lt;/SyncRecursive&gt;
-      &lt;PolicyPath /&gt;
-    &lt;/SyncProfile&gt;
-    &lt;SyncProfile&gt;
-      &lt;SyncProfileName&gt;Vue Demo&lt;/SyncProfileName&gt;
-      &lt;StorageConnectionString&gt;DefaultEndpointsProtocol=https;AccountName=vuedemo;AccountKey=HdvUv+7P7GhlUSNyYjuGbUnPuvlLSS6DNRIBlAU3uewMpl6U23qKuU+o5eqmmataLWBDpLCB4hqNv/d3g44s8Q==;EndpointSuffix=core.windows.net&lt;/StorageConnectionString&gt;
-      &lt;StorageContainerName&gt;$web&lt;/StorageContainerName&gt;
-      &lt;SyncStorageBool&gt;true&lt;/SyncStorageBool&gt;
-      &lt;SyncPolicyBool&gt;false&lt;/SyncPolicyBool&gt;
-      &lt;UIPath&gt;C:\Users\brhacke\OneDrive\Dev\MSFT\adaljs sample&lt;/UIPath&gt;
-      &lt;SyncRecursive&gt;true&lt;/SyncRecursive&gt;
-      &lt;PolicyPath /&gt;
-    &lt;/SyncProfile&gt;
-    &lt;SyncProfile&gt;
-      &lt;SyncProfileName&gt;West Bend UI PoC&lt;/SyncProfileName&gt;
-      &lt;StorageConnectionString&gt;DefaultEndpointsProtocol=https;AccountName=wutnu;AccountKey=uGIK+v15U3UWl3PvDr9pxw8higNxCXW2UBtJZ4hykWOPZy1I3dNO/iN2PKODuDyJj5yfZPLsJaUXdq/G81oPJQ==;EndpointSuffix=core.windows.net&lt;/StorageConnectionString&gt;
-      &lt;StorageContainerName&gt;pocwbui&lt;/StorageContainerName&gt;
-      &lt;SyncStorageBool&gt;true&lt;/SyncStorageBool&gt;
-      &lt;SyncPolicyBool&gt;false&lt;/SyncPolicyBool&gt;
-      &lt;UIPath&gt;C:\Users\brhacke\OneDrive - Microsoft\Customers\West Bend\B2CUI&lt;/UIPath&gt;
-      &lt;SyncRecursive&gt;true&lt;/SyncRecursive&gt;
-      &lt;PolicyPath /&gt;
-    &lt;/SyncProfile&gt;
-    &lt;SyncProfile&gt;
-      &lt;SyncProfileName&gt;mobiledemo&lt;/SyncProfileName&gt;
-      &lt;StorageConnectionString&gt;DefaultEndpointsProtocol=https;AccountName=wutnu;AccountKey=uGIK+v15U3UWl3PvDr9pxw8higNxCXW2UBtJZ4hykWOPZy1I3dNO/iN2PKODuDyJj5yfZPLsJaUXdq/G81oPJQ==;EndpointSuffix=core.windows.net&lt;/StorageConnectionString&gt;
-      &lt;StorageContainerName&gt;mobiletest&lt;/StorageContainerName&gt;
-      &lt;SyncStorageBool&gt;true&lt;/SyncStorageBool&gt;
-      &lt;SyncPolicyBool&gt;false&lt;/SyncPolicyBool&gt;
-      &lt;UIPath&gt;C:\Users\brhacke\OneDrive\Dev\MSFT\B2C-mobileUI-hackerdemob2c\UI&lt;/UIPath&gt;
-      &lt;SyncRecursive&gt;true&lt;/SyncRecursive&gt;
-      &lt;PolicyPath /&gt;
-    &lt;/SyncProfile&gt;
-    &lt;SyncProfile&gt;
-      &lt;SyncProfileName&gt;CBPOC Model&lt;/SyncProfileName&gt;
-      &lt;StorageConnectionString&gt;DefaultEndpointsProtocol=https;AccountName=cbpocmodel;AccountKey=E7jz6F/kY+sNRl2HBsXke1OBJOA3N39L7lX8pVZo9swpqtVCK3vYGvKbJ2byP8aB/9NaljeusdBKC0JBE8lsLg==;BlobEndpoint=https://cbpocmodel.blob.core.windows.net/;QueueEndpoint=https://cbpocmodel.queue.core.windows.net/;TableEndpoint=https://cbpocmodel.table.core.windows.net/;FileEndpoint=https://cbpocmodel.file.core.windows.net/;&lt;/StorageConnectionString&gt;
-      &lt;StorageContainerName&gt;b2cui&lt;/StorageContainerName&gt;
-      &lt;SyncStorageBool&gt;true&lt;/SyncStorageBool&gt;
-      &lt;SyncPolicyBool&gt;true&lt;/SyncPolicyBool&gt;
-      &lt;UIPath&gt;C:\Users\brhacke\OneDrive - Microsoft\Customers\College Board\UI&lt;/UIPath&gt;
-      &lt;SyncRecursive&gt;true&lt;/SyncRecursive&gt;
-      &lt;PolicyPath&gt;C:\Users\brhacke\OneDrive - Microsoft\Customers\College Board\mfapolicies&lt;/PolicyPath&gt;
-    &lt;/SyncProfile&gt;
-    &lt;SyncProfile&gt;
-      &lt;SyncProfileName&gt;UnifiedNew-HackerDemo&lt;/SyncProfileName&gt;
-      &lt;StorageConnectionString&gt;DefaultEndpointsProtocol=https;AccountName=wutnu;AccountKey=uGIK+v15U3UWl3PvDr9pxw8higNxCXW2UBtJZ4hykWOPZy1I3dNO/iN2PKODuDyJj5yfZPLsJaUXdq/G81oPJQ==;EndpointSuffix=core.windows.net&lt;/StorageConnectionString&gt;
-      &lt;StorageContainerName&gt;b2c&lt;/StorageContainerName&gt;
-      &lt;SyncStorageBool&gt;true&lt;/SyncStorageBool&gt;
-      &lt;SyncPolicyBool&gt;true&lt;/SyncPolicyBool&gt;
-      &lt;UIPath&gt;C:\Users\brhacke\OneDrive\Dev\MSFT\B2C-IEF-hackerdemob2c\UI&lt;/UIPath&gt;
-      &lt;SyncRecursive&gt;true&lt;/SyncRecursive&gt;
-      &lt;PolicyPath&gt;C:\Users\brhacke\OneDrive\Dev\MSFT\B2C-IEF-hackerdemob2c\NewPolicies&lt;/PolicyPath&gt;
-    &lt;/SyncProfile&gt;
-  &lt;/Profiles&gt;
-&lt;/SyncProfiles&gt;</Value>
+      <Value Profile="(Default)"></Value>
     </Setting>
     <Setting Name="OverwritePoliciesBool" Type="System.String" Scope="User">
       <Value Profile="(Default)">True</Value>
