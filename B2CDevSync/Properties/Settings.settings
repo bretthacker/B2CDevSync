@@ -1,0 +1,54 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="B2CDevSync.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AADAuthority" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://login.microsoftonline.com/{0}</Value>
+    </Setting>
+    <Setting Name="B2BApi" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://graph.microsoft.com/beta/trustFramework/policies/{0}</Value>
+    </Setting>
+    <Setting Name="SyncAppId" Type="System.String" Scope="User">
+      <Value Profile="(Default)">79ce0569-549a-46d5-b98b-b0e9c8f04f25</Value>
+    </Setting>
+    <Setting Name="B2CTenant" Type="System.String" Scope="User">
+      <Value Profile="(Default)">hackerdemob2c.onmicrosoft.com</Value>
+    </Setting>
+    <Setting Name="Configured" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="RedirectUri" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://B2CSyncApp</Value>
+    </Setting>
+    <Setting Name="PopupDuration" Type="System.String" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="StorageConnectionString" Type="System.String" Scope="User">
+      <Value Profile="(Default)"></Value>
+    </Setting>
+    <Setting Name="StorageContainerName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">b2c</Value>
+    </Setting>
+    <Setting Name="SyncStorageBool" Type="System.String" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="UIPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)"></Value>
+    </Setting>
+    <Setting Name="PolicyPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)"></Value>
+    </Setting>
+    <Setting Name="SyncPolicyBool" Type="System.String" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SyncProfiles" Type="B2CDevSync.Models.SyncProfiles" Scope="User">
+      <Value Profile="(Default)"></Value>
+    </Setting>
+    <Setting Name="OverwritePoliciesBool" Type="System.String" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="FacebookAppId" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>
