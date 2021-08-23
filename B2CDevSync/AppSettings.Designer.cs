@@ -69,6 +69,7 @@
             this.lblSyncProfile = new System.Windows.Forms.Label();
             this.cmbSyncProfiles = new System.Windows.Forms.ComboBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.chkShowAlerts = new System.Windows.Forms.CheckBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.lblSaved = new System.Windows.Forms.Label();
@@ -83,10 +84,10 @@
             // btnCancel
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancel.Location = new System.Drawing.Point(614, 737);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCancel.Location = new System.Drawing.Point(351, 421);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(1);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(227, 47);
+            this.btnCancel.Size = new System.Drawing.Size(130, 27);
             this.btnCancel.TabIndex = 1;
             this.btnCancel.Text = "Close";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -94,103 +95,103 @@
             // 
             // txtTenantID
             // 
-            this.txtTenantID.Location = new System.Drawing.Point(20, 124);
-            this.txtTenantID.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTenantID.Location = new System.Drawing.Point(11, 71);
+            this.txtTenantID.Margin = new System.Windows.Forms.Padding(1);
             this.txtTenantID.Name = "txtTenantID";
-            this.txtTenantID.Size = new System.Drawing.Size(716, 35);
+            this.txtTenantID.Size = new System.Drawing.Size(411, 23);
             this.txtTenantID.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 94);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(8, 54);
+            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(405, 30);
+            this.label1.Size = new System.Drawing.Size(235, 15);
             this.label1.TabIndex = 3;
             this.label1.Text = "B2C tenant (like contoso.onmicrosoft.com)";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 168);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(8, 96);
+            this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 30);
+            this.label2.Size = new System.Drawing.Size(69, 15);
             this.label2.TabIndex = 4;
             this.label2.Text = "Sync app ID";
             // 
             // txtSyncAppID
             // 
-            this.txtSyncAppID.Location = new System.Drawing.Point(19, 198);
-            this.txtSyncAppID.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSyncAppID.Location = new System.Drawing.Point(11, 113);
+            this.txtSyncAppID.Margin = new System.Windows.Forms.Padding(1);
             this.txtSyncAppID.Name = "txtSyncAppID";
-            this.txtSyncAppID.Size = new System.Drawing.Size(403, 35);
+            this.txtSyncAppID.Size = new System.Drawing.Size(232, 23);
             this.txtSyncAppID.TabIndex = 5;
             // 
             // txtAuthority
             // 
-            this.txtAuthority.Location = new System.Drawing.Point(19, 44);
-            this.txtAuthority.Margin = new System.Windows.Forms.Padding(2);
+            this.txtAuthority.Location = new System.Drawing.Point(11, 25);
+            this.txtAuthority.Margin = new System.Windows.Forms.Padding(1);
             this.txtAuthority.Name = "txtAuthority";
-            this.txtAuthority.Size = new System.Drawing.Size(716, 35);
+            this.txtAuthority.Size = new System.Drawing.Size(411, 23);
             this.txtAuthority.TabIndex = 9;
             this.txtAuthority.Text = "https://login.microsoftonline.com/{0}";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(14, 14);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(8, 8);
+            this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(191, 30);
+            this.label4.Size = new System.Drawing.Size(107, 15);
             this.label4.TabIndex = 10;
             this.label4.Text = "Azure AD authority";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(13, 252);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(7, 144);
+            this.label6.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(267, 30);
+            this.label6.Size = new System.Drawing.Size(150, 15);
             this.label6.TabIndex = 15;
             this.label6.Text = "B2C Management Base URI";
             // 
             // txtB2BApi
             // 
-            this.txtB2BApi.Location = new System.Drawing.Point(17, 282);
-            this.txtB2BApi.Margin = new System.Windows.Forms.Padding(2);
+            this.txtB2BApi.Location = new System.Drawing.Point(10, 161);
+            this.txtB2BApi.Margin = new System.Windows.Forms.Padding(1);
             this.txtB2BApi.Name = "txtB2BApi";
-            this.txtB2BApi.Size = new System.Drawing.Size(716, 35);
+            this.txtB2BApi.Size = new System.Drawing.Size(411, 23);
             this.txtB2BApi.TabIndex = 14;
             this.txtB2BApi.Text = "https://graph.microsoft.com/beta/trustFramework/policies/{0}";
             // 
             // txtRedirectUri
             // 
-            this.txtRedirectUri.Location = new System.Drawing.Point(436, 198);
-            this.txtRedirectUri.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRedirectUri.Location = new System.Drawing.Point(249, 113);
+            this.txtRedirectUri.Margin = new System.Windows.Forms.Padding(1);
             this.txtRedirectUri.Name = "txtRedirectUri";
-            this.txtRedirectUri.Size = new System.Drawing.Size(298, 35);
+            this.txtRedirectUri.Size = new System.Drawing.Size(172, 23);
             this.txtRedirectUri.TabIndex = 17;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(432, 169);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(247, 97);
+            this.label7.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(120, 30);
+            this.label7.Size = new System.Drawing.Size(68, 15);
             this.label7.TabIndex = 16;
             this.label7.Text = "Redirect Uri";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(16, 337);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(9, 193);
+            this.label8.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(304, 30);
+            this.label8.Size = new System.Drawing.Size(174, 15);
             this.label8.TabIndex = 19;
             this.label8.Text = "Popup Duration (0 is no popup)";
             // 
@@ -203,21 +204,21 @@
             "4 seconds",
             "5 seconds",
             "0 (no popup)"});
-            this.cmdPopupDuration.Location = new System.Drawing.Point(16, 367);
-            this.cmdPopupDuration.Margin = new System.Windows.Forms.Padding(2);
+            this.cmdPopupDuration.Location = new System.Drawing.Point(9, 210);
+            this.cmdPopupDuration.Margin = new System.Windows.Forms.Padding(1);
             this.cmdPopupDuration.Name = "cmdPopupDuration";
-            this.cmdPopupDuration.Size = new System.Drawing.Size(159, 38);
+            this.cmdPopupDuration.Size = new System.Drawing.Size(93, 23);
             this.cmdPopupDuration.TabIndex = 20;
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(12, 10);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
+            this.tabControl1.Location = new System.Drawing.Point(7, 6);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(835, 712);
+            this.tabControl1.Size = new System.Drawing.Size(477, 407);
             this.tabControl1.TabIndex = 33;
             // 
             // tabPage1
@@ -226,21 +227,21 @@
             this.tabPage1.Controls.Add(this.pnlProfile);
             this.tabPage1.Controls.Add(this.lblSyncProfile);
             this.tabPage1.Controls.Add(this.cmbSyncProfiles);
-            this.tabPage1.Location = new System.Drawing.Point(4, 39);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage1.Location = new System.Drawing.Point(4, 24);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(1);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(827, 669);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(1);
+            this.tabPage1.Size = new System.Drawing.Size(469, 379);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Policies";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // btnAddProfile
             // 
-            this.btnAddProfile.Location = new System.Drawing.Point(584, 47);
-            this.btnAddProfile.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddProfile.Location = new System.Drawing.Point(334, 27);
+            this.btnAddProfile.Margin = new System.Windows.Forms.Padding(1);
             this.btnAddProfile.Name = "btnAddProfile";
-            this.btnAddProfile.Size = new System.Drawing.Size(139, 44);
+            this.btnAddProfile.Size = new System.Drawing.Size(79, 25);
             this.btnAddProfile.TabIndex = 37;
             this.btnAddProfile.Text = "Add Profile";
             this.btnAddProfile.UseVisualStyleBackColor = true;
@@ -256,18 +257,18 @@
             this.pnlProfile.Controls.Add(this.groupBox1);
             this.pnlProfile.Controls.Add(this.label11);
             this.pnlProfile.Controls.Add(this.txtSyncProfileName);
-            this.pnlProfile.Location = new System.Drawing.Point(13, 96);
-            this.pnlProfile.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlProfile.Location = new System.Drawing.Point(7, 55);
+            this.pnlProfile.Margin = new System.Windows.Forms.Padding(1);
             this.pnlProfile.Name = "pnlProfile";
-            this.pnlProfile.Size = new System.Drawing.Size(790, 554);
+            this.pnlProfile.Size = new System.Drawing.Size(451, 317);
             this.pnlProfile.TabIndex = 36;
             // 
             // btnProfileCancel
             // 
-            this.btnProfileCancel.Location = new System.Drawing.Point(504, 495);
-            this.btnProfileCancel.Margin = new System.Windows.Forms.Padding(2);
+            this.btnProfileCancel.Location = new System.Drawing.Point(288, 283);
+            this.btnProfileCancel.Margin = new System.Windows.Forms.Padding(1);
             this.btnProfileCancel.Name = "btnProfileCancel";
-            this.btnProfileCancel.Size = new System.Drawing.Size(189, 43);
+            this.btnProfileCancel.Size = new System.Drawing.Size(108, 25);
             this.btnProfileCancel.TabIndex = 40;
             this.btnProfileCancel.Text = "Cancel";
             this.btnProfileCancel.UseVisualStyleBackColor = true;
@@ -275,10 +276,10 @@
             // 
             // btnProfileDelete
             // 
-            this.btnProfileDelete.Location = new System.Drawing.Point(297, 495);
-            this.btnProfileDelete.Margin = new System.Windows.Forms.Padding(2);
+            this.btnProfileDelete.Location = new System.Drawing.Point(170, 283);
+            this.btnProfileDelete.Margin = new System.Windows.Forms.Padding(1);
             this.btnProfileDelete.Name = "btnProfileDelete";
-            this.btnProfileDelete.Size = new System.Drawing.Size(189, 43);
+            this.btnProfileDelete.Size = new System.Drawing.Size(108, 25);
             this.btnProfileDelete.TabIndex = 39;
             this.btnProfileDelete.Text = "Delete";
             this.btnProfileDelete.UseVisualStyleBackColor = true;
@@ -286,10 +287,10 @@
             // 
             // btnProfileSave
             // 
-            this.btnProfileSave.Location = new System.Drawing.Point(91, 495);
-            this.btnProfileSave.Margin = new System.Windows.Forms.Padding(2);
+            this.btnProfileSave.Location = new System.Drawing.Point(52, 283);
+            this.btnProfileSave.Margin = new System.Windows.Forms.Padding(1);
             this.btnProfileSave.Name = "btnProfileSave";
-            this.btnProfileSave.Size = new System.Drawing.Size(189, 43);
+            this.btnProfileSave.Size = new System.Drawing.Size(108, 25);
             this.btnProfileSave.TabIndex = 38;
             this.btnProfileSave.Text = "Save";
             this.btnProfileSave.UseVisualStyleBackColor = true;
@@ -309,11 +310,11 @@
             this.groupBox2.Controls.Add(this.txtStorageConnectionString);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.txtStorageContainer);
-            this.groupBox2.Location = new System.Drawing.Point(16, 240);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Location = new System.Drawing.Point(9, 137);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(1);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(758, 240);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(1);
+            this.groupBox2.Size = new System.Drawing.Size(433, 137);
             this.groupBox2.TabIndex = 37;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Storage/UI";
@@ -323,10 +324,10 @@
             this.chkUIRecursive.AutoSize = true;
             this.chkUIRecursive.Checked = true;
             this.chkUIRecursive.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkUIRecursive.Location = new System.Drawing.Point(604, 69);
-            this.chkUIRecursive.Margin = new System.Windows.Forms.Padding(2);
+            this.chkUIRecursive.Location = new System.Drawing.Point(345, 39);
+            this.chkUIRecursive.Margin = new System.Windows.Forms.Padding(1);
             this.chkUIRecursive.Name = "chkUIRecursive";
-            this.chkUIRecursive.Size = new System.Drawing.Size(135, 34);
+            this.chkUIRecursive.Size = new System.Drawing.Size(81, 19);
             this.chkUIRecursive.TabIndex = 28;
             this.chkUIRecursive.Text = "Recursive?";
             this.chkUIRecursive.UseVisualStyleBackColor = true;
@@ -336,10 +337,10 @@
             this.chkSyncAzureStorage.AutoSize = true;
             this.chkSyncAzureStorage.Checked = true;
             this.chkSyncAzureStorage.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkSyncAzureStorage.Location = new System.Drawing.Point(27, 33);
-            this.chkSyncAzureStorage.Margin = new System.Windows.Forms.Padding(2);
+            this.chkSyncAzureStorage.Location = new System.Drawing.Point(15, 19);
+            this.chkSyncAzureStorage.Margin = new System.Windows.Forms.Padding(1);
             this.chkSyncAzureStorage.Name = "chkSyncAzureStorage";
-            this.chkSyncAzureStorage.Size = new System.Drawing.Size(226, 34);
+            this.chkSyncAzureStorage.Size = new System.Drawing.Size(132, 19);
             this.chkSyncAzureStorage.TabIndex = 27;
             this.chkSyncAzureStorage.Text = "Sync Azure Storage?";
             this.chkSyncAzureStorage.UseVisualStyleBackColor = true;
@@ -347,10 +348,10 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(22, 75);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(13, 43);
+            this.label9.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(261, 30);
+            this.label9.Size = new System.Drawing.Size(149, 15);
             this.label9.TabIndex = 24;
             this.label9.Text = "Custom UI folder to watch:";
             // 
@@ -358,19 +359,19 @@
             // 
             this.txtUIFolderPath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtUIFolderPath.Location = new System.Drawing.Point(27, 106);
-            this.txtUIFolderPath.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUIFolderPath.Location = new System.Drawing.Point(15, 61);
+            this.txtUIFolderPath.Margin = new System.Windows.Forms.Padding(1);
             this.txtUIFolderPath.Name = "txtUIFolderPath";
-            this.txtUIFolderPath.Size = new System.Drawing.Size(649, 35);
+            this.txtUIFolderPath.Size = new System.Drawing.Size(373, 23);
             this.txtUIFolderPath.TabIndex = 22;
             // 
             // btnUIFolder
             // 
             this.btnUIFolder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnUIFolder.Location = new System.Drawing.Point(681, 106);
-            this.btnUIFolder.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUIFolder.Location = new System.Drawing.Point(389, 61);
+            this.btnUIFolder.Margin = new System.Windows.Forms.Padding(1);
             this.btnUIFolder.Name = "btnUIFolder";
-            this.btnUIFolder.Size = new System.Drawing.Size(44, 43);
+            this.btnUIFolder.Size = new System.Drawing.Size(25, 25);
             this.btnUIFolder.TabIndex = 26;
             this.btnUIFolder.Text = "...";
             this.btnUIFolder.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -380,37 +381,37 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(22, 156);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(13, 89);
+            this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(250, 30);
+            this.label3.Size = new System.Drawing.Size(143, 15);
             this.label3.TabIndex = 8;
             this.label3.Text = "Storage connection string";
             // 
             // txtStorageConnectionString
             // 
-            this.txtStorageConnectionString.Location = new System.Drawing.Point(26, 187);
-            this.txtStorageConnectionString.Margin = new System.Windows.Forms.Padding(2);
+            this.txtStorageConnectionString.Location = new System.Drawing.Point(15, 107);
+            this.txtStorageConnectionString.Margin = new System.Windows.Forms.Padding(1);
             this.txtStorageConnectionString.Name = "txtStorageConnectionString";
-            this.txtStorageConnectionString.Size = new System.Drawing.Size(518, 35);
+            this.txtStorageConnectionString.Size = new System.Drawing.Size(298, 23);
             this.txtStorageConnectionString.TabIndex = 7;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(549, 156);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(314, 89);
+            this.label5.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(161, 30);
+            this.label5.Size = new System.Drawing.Size(92, 15);
             this.label5.TabIndex = 12;
             this.label5.Text = "Container name";
             // 
             // txtStorageContainer
             // 
-            this.txtStorageContainer.Location = new System.Drawing.Point(554, 187);
-            this.txtStorageContainer.Margin = new System.Windows.Forms.Padding(2);
+            this.txtStorageContainer.Location = new System.Drawing.Point(317, 107);
+            this.txtStorageContainer.Margin = new System.Windows.Forms.Padding(1);
             this.txtStorageContainer.Name = "txtStorageContainer";
-            this.txtStorageContainer.Size = new System.Drawing.Size(188, 35);
+            this.txtStorageContainer.Size = new System.Drawing.Size(109, 23);
             this.txtStorageContainer.TabIndex = 11;
             // 
             // groupBox1
@@ -421,11 +422,11 @@
             this.groupBox1.Controls.Add(this.btnPolicyFolder);
             this.groupBox1.Controls.Add(this.chkSyncB2CPolicies);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Location = new System.Drawing.Point(16, 78);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Location = new System.Drawing.Point(9, 45);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(1);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(756, 154);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(1);
+            this.groupBox1.Size = new System.Drawing.Size(432, 88);
             this.groupBox1.TabIndex = 34;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Policies";
@@ -434,19 +435,19 @@
             // 
             this.txtPolicyFolderPath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPolicyFolderPath.Location = new System.Drawing.Point(27, 100);
-            this.txtPolicyFolderPath.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPolicyFolderPath.Location = new System.Drawing.Point(15, 57);
+            this.txtPolicyFolderPath.Margin = new System.Windows.Forms.Padding(1);
             this.txtPolicyFolderPath.Name = "txtPolicyFolderPath";
-            this.txtPolicyFolderPath.Size = new System.Drawing.Size(647, 35);
+            this.txtPolicyFolderPath.Size = new System.Drawing.Size(371, 23);
             this.txtPolicyFolderPath.TabIndex = 21;
             // 
             // btnPolicyFolder
             // 
             this.btnPolicyFolder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPolicyFolder.Location = new System.Drawing.Point(679, 99);
-            this.btnPolicyFolder.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPolicyFolder.Location = new System.Drawing.Point(388, 57);
+            this.btnPolicyFolder.Margin = new System.Windows.Forms.Padding(1);
             this.btnPolicyFolder.Name = "btnPolicyFolder";
-            this.btnPolicyFolder.Size = new System.Drawing.Size(44, 43);
+            this.btnPolicyFolder.Size = new System.Drawing.Size(25, 25);
             this.btnPolicyFolder.TabIndex = 25;
             this.btnPolicyFolder.Text = "...";
             this.btnPolicyFolder.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -459,10 +460,10 @@
             this.chkSyncB2CPolicies.AutoSize = true;
             this.chkSyncB2CPolicies.Checked = true;
             this.chkSyncB2CPolicies.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkSyncB2CPolicies.Location = new System.Drawing.Point(27, 33);
-            this.chkSyncB2CPolicies.Margin = new System.Windows.Forms.Padding(2);
+            this.chkSyncB2CPolicies.Location = new System.Drawing.Point(15, 19);
+            this.chkSyncB2CPolicies.Margin = new System.Windows.Forms.Padding(1);
             this.chkSyncB2CPolicies.Name = "chkSyncB2CPolicies";
-            this.chkSyncB2CPolicies.Size = new System.Drawing.Size(206, 34);
+            this.chkSyncB2CPolicies.Size = new System.Drawing.Size(123, 19);
             this.chkSyncB2CPolicies.TabIndex = 28;
             this.chkSyncB2CPolicies.Text = "Sync B2C Policies?";
             this.chkSyncB2CPolicies.UseVisualStyleBackColor = true;
@@ -470,52 +471,53 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(22, 68);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(13, 39);
+            this.label10.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(217, 30);
+            this.label10.Size = new System.Drawing.Size(125, 15);
             this.label10.TabIndex = 23;
             this.label10.Text = "Policy folder to watch:";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(12, 5);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Location = new System.Drawing.Point(7, 3);
+            this.label11.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(182, 30);
+            this.label11.Size = new System.Drawing.Size(104, 15);
             this.label11.TabIndex = 36;
             this.label11.Text = "Sync Profile Name";
             // 
             // txtSyncProfileName
             // 
-            this.txtSyncProfileName.Location = new System.Drawing.Point(16, 36);
-            this.txtSyncProfileName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSyncProfileName.Location = new System.Drawing.Point(9, 21);
+            this.txtSyncProfileName.Margin = new System.Windows.Forms.Padding(1);
             this.txtSyncProfileName.Name = "txtSyncProfileName";
-            this.txtSyncProfileName.Size = new System.Drawing.Size(552, 35);
+            this.txtSyncProfileName.Size = new System.Drawing.Size(317, 23);
             this.txtSyncProfileName.TabIndex = 35;
             // 
             // lblSyncProfile
             // 
             this.lblSyncProfile.AutoSize = true;
-            this.lblSyncProfile.Location = new System.Drawing.Point(9, 12);
-            this.lblSyncProfile.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSyncProfile.Location = new System.Drawing.Point(5, 7);
+            this.lblSyncProfile.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblSyncProfile.Name = "lblSyncProfile";
-            this.lblSyncProfile.Size = new System.Drawing.Size(186, 30);
+            this.lblSyncProfile.Size = new System.Drawing.Size(106, 15);
             this.lblSyncProfile.TabIndex = 35;
             this.lblSyncProfile.Text = "Select Sync Profile:";
             // 
             // cmbSyncProfiles
             // 
             this.cmbSyncProfiles.FormattingEnabled = true;
-            this.cmbSyncProfiles.Location = new System.Drawing.Point(9, 48);
-            this.cmbSyncProfiles.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbSyncProfiles.Location = new System.Drawing.Point(5, 27);
+            this.cmbSyncProfiles.Margin = new System.Windows.Forms.Padding(1);
             this.cmbSyncProfiles.Name = "cmbSyncProfiles";
-            this.cmbSyncProfiles.Size = new System.Drawing.Size(557, 38);
+            this.cmbSyncProfiles.Size = new System.Drawing.Size(320, 23);
             this.cmbSyncProfiles.TabIndex = 34;
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.chkShowAlerts);
             this.tabPage2.Controls.Add(this.btnSave);
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.txtAuthority);
@@ -529,22 +531,34 @@
             this.tabPage2.Controls.Add(this.txtSyncAppID);
             this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Controls.Add(this.txtB2BApi);
-            this.tabPage2.Location = new System.Drawing.Point(4, 39);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 24);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(1);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage2.Size = new System.Drawing.Size(827, 669);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(1);
+            this.tabPage2.Size = new System.Drawing.Size(469, 379);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Application";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // chkShowAlerts
+            // 
+            this.chkShowAlerts.AutoSize = true;
+            this.chkShowAlerts.Checked = true;
+            this.chkShowAlerts.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkShowAlerts.Location = new System.Drawing.Point(249, 212);
+            this.chkShowAlerts.Name = "chkShowAlerts";
+            this.chkShowAlerts.Size = new System.Drawing.Size(148, 19);
+            this.chkShowAlerts.TabIndex = 22;
+            this.chkShowAlerts.Text = "Show popups on error?";
+            this.chkShowAlerts.UseVisualStyleBackColor = true;
+            // 
             // btnSave
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.Location = new System.Drawing.Point(16, 445);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSave.Location = new System.Drawing.Point(9, 254);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(1);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(227, 47);
+            this.btnSave.Size = new System.Drawing.Size(130, 27);
             this.btnSave.TabIndex = 21;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -553,24 +567,24 @@
             // lblSaved
             // 
             this.lblSaved.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblSaved.Location = new System.Drawing.Point(16, 737);
-            this.lblSaved.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSaved.Location = new System.Drawing.Point(9, 421);
+            this.lblSaved.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblSaved.Name = "lblSaved";
-            this.lblSaved.Size = new System.Drawing.Size(566, 44);
+            this.lblSaved.Size = new System.Drawing.Size(323, 25);
             this.lblSaved.TabIndex = 34;
             // 
             // AppSettings
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(168F, 168F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(859, 794);
+            this.ClientSize = new System.Drawing.Size(491, 454);
             this.Controls.Add(this.lblSaved);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.btnCancel);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AppSettings";
@@ -637,5 +651,6 @@
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.CheckBox chkUIRecursive;
         private System.Windows.Forms.Label lblSaved;
+        private System.Windows.Forms.CheckBox chkShowAlerts;
     }
 }

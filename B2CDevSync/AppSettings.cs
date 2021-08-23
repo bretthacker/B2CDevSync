@@ -40,6 +40,7 @@ namespace B2CDevSync
             txtRedirectUri.Text = _settings.RedirectUri;
             cmdPopupDuration.SelectedIndex = _settings.PopupDuration=="" ? 3 : Convert.ToInt16(_settings.PopupDuration);
             cmbSyncProfiles.SelectedIndexChanged += CmbSyncProfiles_SelectedIndexChanged;
+            chkShowAlerts.Checked = _settings.ShowMessageBoxOnError;
             LoadProfilePicker();
         }
 
@@ -113,6 +114,7 @@ namespace B2CDevSync
             chkSyncB2CPolicies.Checked = profile.SyncPolicyBool;
             chkSyncAzureStorage.Checked = profile.SyncStorageBool;
             txtSyncProfileName.Text = profile.SyncProfileName;
+            chkShowAlerts.Checked = profile.ShowMessageBoxOnError;
         }
 
         private void SetDirty()
@@ -160,6 +162,7 @@ namespace B2CDevSync
             profile.SyncPolicyBool = chkSyncB2CPolicies.Checked;
             profile.SyncStorageBool = chkSyncAzureStorage.Checked;
             profile.SyncProfileName = txtSyncProfileName.Text;
+            profile.ShowMessageBoxOnError = chkShowAlerts.Checked;
         }
 
         private bool IsValidProfile()
@@ -190,6 +193,7 @@ namespace B2CDevSync
             chkSyncB2CPolicies.Checked = true;
             chkSyncAzureStorage.Checked = true;
             chkUIRecursive.Checked = true;
+            chkShowAlerts.Checked = true;
             _isDirty = false;
         }
 
@@ -214,6 +218,7 @@ namespace B2CDevSync
             _settings.RedirectUri = txtRedirectUri.Text;
             _settings.PopupDuration = cmdPopupDuration.SelectedIndex.ToString();
             _settings.Configured = (_settings.SyncProfiles.Profiles.Count > 0 && _settings.B2CTenant != "contosob2c.onmicrosoft.com");
+            _settings.ShowMessageBoxOnError = chkShowAlerts.Checked;
 
             _settings.Save();
             Notify("Saved");

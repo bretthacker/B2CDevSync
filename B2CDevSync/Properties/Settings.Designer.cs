@@ -12,7 +12,7 @@ namespace B2CDevSync.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.4.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.0.3.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -61,7 +61,7 @@ namespace B2CDevSync.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("contosob2c.onmicrosoft.com")]
+        [global::System.Configuration.DefaultSettingValueAttribute("hackerdemob2c.onmicrosoft.com")]
         public string B2CTenant {
             get {
                 return ((string)(this["B2CTenant"]));
@@ -181,9 +181,6 @@ namespace B2CDevSync.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<SyncProfiles xmlns:xsi=\"http://www.w3.o" +
-            "rg/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <Pr" +
-            "ofiles></Profiles>\r\n</SyncProfiles>")]
         public global::B2CDevSync.Models.SyncProfiles SyncProfiles {
             get {
                 return ((global::B2CDevSync.Models.SyncProfiles)(this["SyncProfiles"]));
@@ -214,6 +211,18 @@ namespace B2CDevSync.Properties {
             }
             set {
                 this["FacebookAppId"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool ShowMessageBoxOnError {
+            get {
+                return ((bool)(this["ShowMessageBoxOnError"]));
+            }
+            set {
+                this["ShowMessageBoxOnError"] = value;
             }
         }
     }
