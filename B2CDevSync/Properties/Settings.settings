@@ -24,7 +24,7 @@
       <Value Profile="(Default)">3</Value>
     </Setting>
     <Setting Name="StorageConnectionString" Type="System.String" Scope="User">
-      <Value Profile="(Default)"></Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="StorageContainerName" Type="System.String" Scope="User">
       <Value Profile="(Default)">b2c</Value>
@@ -33,22 +33,25 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="UIPath" Type="System.String" Scope="User">
-      <Value Profile="(Default)"></Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="PolicyPath" Type="System.String" Scope="User">
-      <Value Profile="(Default)"></Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="SyncPolicyBool" Type="System.String" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="SyncProfiles" Type="B2CDevSync.Models.SyncProfiles" Scope="User">
-      <Value Profile="(Default)"></Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="OverwritePoliciesBool" Type="System.String" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="FacebookAppId" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ShowMessageBoxOnError" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
     </Setting>
   </Settings>
 </SettingsFile>

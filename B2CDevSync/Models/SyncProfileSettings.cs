@@ -25,6 +25,7 @@ namespace B2CDevSync.Models
         public string UIPath { get; set; }
         public bool SyncRecursive { get; set; }
         public string PolicyPath { get; set; }
+        public bool ShowMessageBoxOnError { get; set; }
 
         public SyncProfile()
         {

@@ -153,7 +153,10 @@ namespace B2CDevSync
         private void PolicyErrorMessageAsync(object sender, PolicyErrorArgs e)
         {
             _logger.Write(e);
-            MessageBox.Show(e.Error.Error.Message, e.Error.Error.Code + " Policy Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            if (_settings.ShowMessageBoxOnError)
+            {
+                MessageBox.Show(e.Error.Error.Message, e.Error.Error.Code + " Policy Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnAppSettings_Click(object sender, EventArgs e)
@@ -198,7 +201,8 @@ namespace B2CDevSync
                 {
                     _auth = new Auth(_settings);
                     UserInfo res = null;
-                    var task = Task.Run(async () => {
+                    var task = Task.Run(async () =>
+                    {
                         res = await _auth.Login();
                     });
                     task.Wait();
@@ -322,12 +326,18 @@ namespace B2CDevSync
                 {
                     Logging.WriteToAppLog("Error parsing XML while uploading policy", EventLogEntryType.Error, ex);
                     var msg = String.Format("An error occured parsing your XML policy update: {0}. Additional details may be availabe in the Windows event log for details.", ex.Message);
-                    MessageBox.Show(msg, "Error Parsing XML", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    if (_settings.ShowMessageBoxOnError)
+                    {
+                        MessageBox.Show(msg, "Error Parsing XML", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 catch (Exception ex)
                 {
                     Logging.WriteToAppLog("Error uploading policy", EventLogEntryType.Error, ex);
-                    MessageBox.Show("Something went wrong while uploading your policy update. Please check the Windows event log for details.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    if (_settings.ShowMessageBoxOnError)
+                    {
+                        MessageBox.Show("Something went wrong while uploading your policy update. Please check the Windows event log for details.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 finally
                 {
@@ -384,7 +394,8 @@ namespace B2CDevSync
         {
             if (InvokeRequired)
             {
-                BeginInvoke((MethodInvoker)delegate {
+                BeginInvoke((MethodInvoker)delegate
+                {
                     _logger_LoggerMessage(sender, e);
                 });
                 return;
@@ -421,7 +432,8 @@ namespace B2CDevSync
             if (_status.Visible)
             {
                 _status.Hide();
-            } else
+            }
+            else
             {
                 var scr = Screen.PrimaryScreen.WorkingArea;
                 Point p = new Point((scr.Right - _status.Width - 100), (scr.Bottom - _status.Height));
